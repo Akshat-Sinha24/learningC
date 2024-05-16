@@ -1,58 +1,58 @@
 #include <stdio.h>
 
 int main() {
-    float mm1;
-    float rm1;
-    float percentage1;
+    float eng_max;
+    float eng_score;
+    float eng_percent;
     
-    float mm2;
-    float rm2;
-    float percentage2;
+    float chem_max;
+    float chem_score;
+    float chem_percent;
     
-    float mm3;
-    float rm3;
-    float percentage3;
+    float maths_max;
+    float maths_score;
+    float maths_percent;
     
-    float ov1;
-    float ov2;
-    float percentage4;
+    float max_marks;
+    float max_score;
+    float final_percent;
     
-    //subject1
-    printf("maximum marks subject1: ");
-    scanf("%d", &mm1);
+    //english%
+    printf("Maximum marks english: ");
+    scanf("%f", &eng_max);
     
-    printf("received marks subject1: ");
-    scanf("%d", &rm1);
+    printf("Received marks english: ");
+    scanf("%f", &eng_score);
     
-    percentage1 = (rm1/mm1)*100;
-    printf("subject1 percentage: %f ",percentage1);
+    eng_percent = (eng_score/eng_max)*100;
+    printf("English percentage: %f ",eng_percent);
     
-    //subject2
-    printf("\n\nmaximum marks subject2: ");
-    scanf("%d", &mm2);
+    //chem%
+    printf("\n\nMaximum marks chemistry: ");
+    scanf("%f", &chem_max);
     
-    printf("received marks subject2: ");
-    scanf("%d", &rm2);
+    printf("Received marks chemistry: ");
+    scanf("%f", &chem_score);
     
-    percentage2 = (rm2/mm2)*100;
-    printf("subject2 percentage: %f ",percentage2);
+    chem_percent = (chem_score/chem_max)*100;
+    printf("Chemistry percentage: %f ",chem_percent);
     
-    //subject3
-    printf("\n\nmaximum marks subject3: ");
-    scanf("%d", &mm3);
+    //maths%
+    printf("\n\nMaximum marks maths: ");
+    scanf("%f", &maths_max);
     
-    printf("received marks subject3: ");
-    scanf("%d", &rm3);
+    printf("Received marks maths: ");
+    scanf("%f", &maths_score);
     
-    percentage3 = (rm3/mm3)*100;
-    printf("subject3 percentage: %f ",percentage3);
+    maths_percent = (maths_score/maths_max)*100;
+    printf("Maths percentage: %f ",maths_percent);
     
-    //overall
-    ov1= mm1+mm2+mm3;
-    ov2= rm1+rm2+rm3;
+    //Final%
+    max_marks= eng_max+chem_max+maths_max;
+    max_score= eng_score+chem_score+maths_score;
     
-    percentage4=(ov2/ov1)*100;
-    printf("\n\noverall percentage: %f",percentage4);
+    final_percent=(max_score/max_marks)*100;
+    printf("\n\nFinal percentage: %f",final_percent);
 
  return(0);   
 }
